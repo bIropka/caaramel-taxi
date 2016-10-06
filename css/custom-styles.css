@@ -1,0 +1,300 @@
+@font-face {
+    font-family: 'OpenSans Bold';
+    src: url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OpenSans Semibold';
+    src: url("../fonts/OpenSans-Semibold.woff") format("woff"), url("../fonts/OpenSans-Semibold.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+/* general */
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'OpenSans Semibold', sans-serif;
+    font-size: 12px;
+    color: #000000;
+}
+html, body {
+    background-color: #ffffff;
+    width: 100%;
+}
+
+a {
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:focus, a:active {
+    outline: 0;
+}
+h2 {
+    display: inline-block;
+    font-size: 1.833333333333333em;
+    font-weight: 100;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+main {
+    display: block;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1080px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+.wrapper:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* page-price */
+
+.page-price .promo-text {
+    font-family: 'OpenSans Bold', sans-serif;
+    color: #f16742;
+    font-size: 1.25em;
+    margin-bottom: 20px;
+}
+
+.page-price table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.page-price table th {
+    width: 33.3333333%;
+    font-family: 'OpenSans Bold', sans-serif;
+    font-size: 1.416666666666667em;
+    line-height: 1;
+    text-transform: uppercase;
+    padding: 20px 25px;
+    text-align: left;
+    border-right: 1px solid #ffffff;
+}
+.page-price table td {
+    background-color: #e9eaea;
+    padding: 15px 20px;
+    border-right: 1px solid #ffffff;
+    border-top: 1px solid #ffffff;
+    text-align: left;
+    vertical-align: top;
+    position: relative;
+}
+.page-price table td:last-child {
+    border-right: none;
+}
+.page-price table tr:nth-child(2n) td {
+    background-color: #f3f3f3;
+}
+.page-price table td:nth-child(1) p {
+    font-family: 'OpenSans Bold', sans-serif;
+    font-size: 1.416666666666667em;
+    color: inherit;
+}
+.page-price table td:nth-child(1) a {
+    text-decoration: underline;
+    font-size: 1.25em;
+    color: #ea5800;
+    line-height: 1.4;
+}
+.page-price table td:nth-child(1) a:hover {
+    text-decoration: none;
+}
+.table-wrapper {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+}
+.all-directions {
+    min-width: 850px;
+}
+.to-airport {
+    min-width: 1000px;
+}
+.all-directions th:nth-child(1) {
+    background: #ffcd22 url('../images/table-th-background-11.png') no-repeat right -20px;
+}
+.all-directions th:nth-child(2) {
+    background: #ffcd22 url('../images/table-th-background-12.png') no-repeat right -25px;
+}
+.all-directions th:nth-child(3) {
+    background: #ffcd22 url('../images/table-th-background-13.png') no-repeat right -8px;
+    border-right: none;
+}
+.all-directions .price-time, .all-directions .price-fix {
+    display: inline-block;
+    width: 135px;
+}
+.all-directions .price-fix {
+    margin-left: 20px;
+}
+.all-directions .price-title {
+    margin-bottom: 15px;
+}
+.all-directions .price-min, .to-airport td p {
+    font-size: 1.25em;
+    color: #ea5800;
+}
+.all-directions .price {
+    font-family: 'OpenSans Bold', sans-serif;
+}
+.all-directions .places-number {
+    width: 110px;
+    font-family: 'OpenSans Bold', sans-serif;
+    color: #ea5800;
+    float: left;
+    line-height: 2;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-right: 3px;
+}
+.all-directions .places-number:after {
+    content: '.....................................................';
+    display: inline-block;
+    font-family: 'OpenSans Semibold', sans-serif;
+    margin-left: 5px;
+    color: #000000;
+}
+.all-directions .price-in-line {
+    line-height: 2;
+}
+
+.page-price .to-airport th {
+    width: 22%;
+    padding: 12px 25px;
+    line-height: 1.3;
+}
+.page-price .to-airport th:nth-child(2) {
+    width: 31%;
+}
+.page-price .to-airport th:nth-child(4) {
+    width: 25%;
+}
+.to-airport th:nth-child(1) {
+    background: #ffcd22 url('../images/table-th-background-11.png') no-repeat right -18px;
+}
+.to-airport th:nth-child(2) {
+    background: #ffcd22 url('../images/table-th-background-22.png') no-repeat right center;
+}
+.to-airport th:nth-child(3) {
+    background: #ffcd22 url('../images/table-th-background-23.png') no-repeat right 0;
+}
+.to-airport th:nth-child(4) {
+    background: #ffcd22 url('../images/table-th-background-24.png') no-repeat right bottom;
+    border-right: none;
+}
+.to-airport .places-number {
+    position: absolute;
+    width: 50%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #d7d7d7;
+    padding: 15px 20px;
+}
+.to-airport td:nth-child(1) .places-number p {
+    font-family: 'OpenSans Semibold', sans-serif;
+    font-size: 1em;
+    line-height: 2;
+}
+.to-airport tr:last-child td:nth-child(2), .to-airport tr:last-child td:nth-child(3), .to-airport tr:last-child td:nth-child(4) {
+    line-height: 1.6;
+}
+
+.more-services li {
+    display: block;
+    width: 23.5%;
+    margin: 0 2% 30px 0;
+    float: left;
+    position: relative;
+}
+.more-services li:nth-child(4n) {
+    margin-right: 0;
+}
+.more-services li .image-wrap {
+    display: block;
+    width: 82px;
+    height: 82px;
+    background: transparent url('../images/icon-service-background.png') no-repeat;
+    float: left;
+    margin-right: 10px;
+}
+.more-services li .service-name {
+    font-size: 1.25em;
+    color: #ea5800;
+    line-height: 1;
+}
+.more-services li .service-price {
+    display: inline-block;
+    white-space: nowrap;
+    position: absolute;
+    left: 70px;
+    bottom: 10px;
+}
+.more-services li .service-price-value {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 8px 13px;
+    background-color: #000000;
+    color: #ffffff;
+    line-height: 1;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    margin-right: 5px;
+}
+.more-services li .service-price-details {
+    display: inline-block;
+    vertical-align: middle;
+    width: 80px;
+    white-space: normal;
+}
+
+@media (max-width: 1080px) {
+    * {
+        font-size: 11px;
+    }
+    .all-directions th:nth-child(1) {
+        width: 10%;
+    }
+    .more-services li, .more-services li:nth-child(4n) {
+        width: 32%;
+        margin: 0 2% 30px 0;
+    }
+    .more-services li:nth-child(3n) {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .more-services li, .more-services li:nth-child(4n), .more-services li:nth-child(3n) {
+        width: 47.5%;
+        margin: 0 5% 30px 0;
+    }
+    .more-services li:nth-child(2n) {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .more-services li, .more-services li:nth-child(4n), .more-services li:nth-child(3n), .more-services li:nth-child(2n) {
+        width: 100%;
+        margin: 0 0 30px 0;
+    }
+}
